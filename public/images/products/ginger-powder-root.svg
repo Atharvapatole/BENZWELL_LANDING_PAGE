@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5" />
+      <stop offset="100%" stop-color="#EDE5D2" />
+    </linearGradient>
+    <linearGradient id="gingerMound" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECD085" />
+      <stop offset="45%" stop-color="#CCA144" />
+      <stop offset="100%" stop-color="#936D1F" />
+    </linearGradient>
+    <filter id="gnShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#123D2A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgP4)" />
+  <circle cx="400" cy="300" r="260" fill="#E5D9BF" opacity="0.45" />
+
+  <!-- Ginger Powder Dish -->
+  <g transform="translate(400, 320)" filter="url(#gnShadow)">
+    <ellipse cx="0" cy="40" rx="220" ry="110" fill="#123D2A" opacity="0.12" />
+    <ellipse cx="0" cy="0" rx="210" ry="105" fill="#28342B" stroke="#C6A15B" stroke-width="4" />
+    <ellipse cx="0" cy="8" rx="190" ry="90" fill="#152119" />
+
+    <!-- Warm Golden Powder Mound -->
+    <path d="M-170 10 Q-80 -110 0 -120 Q80 -110 170 10 Q80 75 0 85 Q-80 75 -170 10 Z" fill="url(#gingerMound)" />
+    <ellipse cx="-25" cy="-35" rx="100" ry="50" fill="#FFF2CF" opacity="0.6" />
+    <ellipse cx="35" cy="-20" rx="80" ry="40" fill="#FFE5A3" opacity="0.45" />
+
+    <!-- Ginger root piece accent -->
+    <path d="M-190 20 Q-150 40 -120 20 Q-140 0 -170 5 Z" fill="#936D1F" stroke="#684D13" stroke-width="2" />
+  </g>
+
+  <!-- Editorial Badge -->
+  <g transform="translate(680, 80)">
+    <rect x="-60" y="-20" width="120" height="40" rx="4" fill="#123D2A" />
+    <text x="0" y="5" font-family="'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#C6A15B" text-anchor="middle">
+      AROMATIC
+    </text>
+  </g>
+
+  <text x="400" y="530" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="700" fill="#123D2A" text-anchor="middle">
+    Dehydrated Ginger Powder
+  </text>
+  <text x="400" y="555" font-family="'Inter', sans-serif" font-size="13" font-weight="500" letter-spacing="2" fill="#70776F" text-anchor="middle">
+    SPICY PUNGENCY • SPICE BLENDS &amp; FOOD PROCESSING
+  </text>
+</svg>

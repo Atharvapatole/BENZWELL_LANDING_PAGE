@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C77A" />
+      <stop offset="50%" stop-color="#C6A15B" />
+      <stop offset="100%" stop-color="#9C7732" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D7B55" />
+      <stop offset="100%" stop-color="#123D2A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Emblem Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Circle -->
+    <circle cx="50" cy="50" r="46" fill="url(#leafGrad)" stroke="url(#goldGrad)" stroke-width="2.5" />
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#C6A15B" stroke-width="0.75" stroke-dasharray="3 3" opacity="0.7" />
+    
+    <!-- Central Geometric Food / Export Leaf & Globe Motif -->
+    <!-- Globe Meridians -->
+    <ellipse cx="50" cy="50" rx="36" ry="16" fill="none" stroke="#C6A15B" stroke-width="0.8" opacity="0.35" transform="rotate(-25 50 50)" />
+    <ellipse cx="50" cy="50" rx="16" ry="36" fill="none" stroke="#C6A15B" stroke-width="0.8" opacity="0.35" transform="rotate(-25 50 50)" />
+
+    <!-- Stylized Golden Spice / Agricultural Sprout Leaf -->
+    <path d="M50 20 C62 34 68 54 50 78 C32 54 38 34 50 20 Z" fill="url(#goldGrad)" filter="url(#shadow)" />
+    <!-- Leaf Center Rib -->
+    <path d="M50 23 L50 75" stroke="#123D2A" stroke-width="1.8" stroke-linecap="round" />
+    <path d="M50 40 Q57 43 61 47" stroke="#123D2A" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M50 50 Q43 53 39 57" stroke="#123D2A" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M50 58 Q56 61 59 64" stroke="#123D2A" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Accent Export Stars / Seeds -->
+    <circle cx="32" cy="46" r="2" fill="#E5C77A" />
+    <circle cx="68" cy="46" r="2" fill="#E5C77A" />
+    <circle cx="50" cy="84" r="2.5" fill="#E5C77A" />
+  </g>
+
+  <!-- Typography: ATHANG IMPEX -->
+  <text x="125" y="58" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="700" letter-spacing="4" fill="#123D2A">
+    ATHANG
+  </text>
+  <text x="325" y="58" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="400" letter-spacing="4" fill="#C6A15B">
+    IMPEX
+  </text>
+
+  <!-- Subtitle Tagline -->
+  <text x="126" y="82" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="3.5" fill="#70776F">
+    FOOD INGREDIENTS EXPORTER
+  </text>
+
+  <!-- Fine divider underline -->
+  <line x1="126" y1="92" x2="480" y2="92" stroke="#E2E0D8" stroke-width="1" />
+  <line x1="126" y1="92" x2="220" y2="92" stroke="#C6A15B" stroke-width="2" />
+</svg>

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="heroDarkVignette" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1B5138" />
+      <stop offset="60%" stop-color="#123D2A" />
+      <stop offset="100%" stop-color="#0A2217" />
+    </radialGradient>
+    <linearGradient id="slateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#243028" />
+      <stop offset="100%" stop-color="#18201B" />
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DE9F" />
+      <stop offset="50%" stop-color="#C6A15B" />
+      <stop offset="100%" stop-color="#8C6A24" />
+    </linearGradient>
+    <linearGradient id="onionPowderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF5" />
+      <stop offset="50%" stop-color="#F4EEDC" />
+      <stop offset="100%" stop-color="#E2D4B5" />
+    </linearGradient>
+    <linearGradient id="onionFlakeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EADAB8" />
+      <stop offset="50%" stop-color="#CEB482" />
+      <stop offset="100%" stop-color="#9C7738" />
+    </linearGradient>
+    <linearGradient id="tomatoPowderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E75841" />
+      <stop offset="50%" stop-color="#C83B25" />
+      <stop offset="100%" stop-color="#8B2111" />
+    </linearGradient>
+    <linearGradient id="gingerPowderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C36E" />
+      <stop offset="50%" stop-color="#CF9E38" />
+      <stop offset="100%" stop-color="#9E731F" />
+    </linearGradient>
+    <filter id="bowlShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="1000" fill="url(#heroDarkVignette)" />
+
+  <!-- Subtle Editorial Grain & Luxury Grid Pattern -->
+  <g opacity="0.08" stroke="#C6A15B" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="1000" />
+    <line x1="400" y1="0" x2="400" y2="1000" />
+    <line x1="800" y1="0" x2="800" y2="1000" />
+    <line x1="1200" y1="0" x2="1200" y2="1000" />
+    <line x1="1500" y1="0" x2="1500" y2="1000" />
+    <line x1="0" y1="200" x2="1600" y2="200" />
+    <line x1="0" y1="500" x2="1600" y2="500" />
+    <line x1="0" y1="800" x2="1600" y2="800" />
+  </g>
+
+  <!-- Textured Stone Tabletop Surface -->
+  <path d="M0 480 Q800 460 1600 480 L1600 1000 L0 1000 Z" fill="url(#slateGrad)" />
+  <line x1="0" y1="480" x2="1600" y2="480" stroke="#C6A15B" stroke-width="1.5" opacity="0.4" />
+
+  <!-- Natural Linen Table Runner / Accent Sheet -->
+  <polygon points="260,1000 1340,1000 1220,530 380,530" fill="#EAE5D9" opacity="0.12" />
+
+  <!-- 4 Editorial Artisan Ceramic Bowls Arranged in Perspective -->
+
+  <!-- BOWL 1: Dehydrated Onion Powder (Left Middle) -->
+  <g transform="translate(320, 680)" filter="url(#bowlShadow)">
+    <!-- Shadow & Base -->
+    <ellipse cx="0" cy="40" rx="170" ry="85" fill="#0E1611" opacity="0.6" />
+    <!-- Ceramic Rim -->
+    <ellipse cx="0" cy="0" rx="160" ry="80" fill="#2D3B31" stroke="url(#goldTrim)" stroke-width="3.5" />
+    <ellipse cx="0" cy="5" rx="146" ry="70" fill="#1C2720" />
+    <!-- Powder Mound -->
+    <path d="M-135 5 Q-60 -75 0 -80 Q60 -75 135 5 Q60 55 0 60 Q-60 55 -135 5 Z" fill="url(#onionPowderGrad)" />
+    <!-- Soft Highlights & Texture -->
+    <ellipse cx="-15" cy="-25" rx="85" ry="40" fill="#FFFFFF" opacity="0.55" />
+    <ellipse cx="25" cy="-10" rx="65" ry="30" fill="#FBF9F1" opacity="0.4" />
+    <!-- Spoon with Powder -->
+    <path d="M-140 -20 Q-180 -80 -240 -120 L-225 -130 Q-165 -85 -125 -15 Z" fill="#7A5A35" stroke="#52391F" stroke-width="2" />
+    <ellipse cx="-130" cy="-15" rx="30" ry="16" fill="url(#onionPowderGrad)" transform="rotate(-30 -130 -15)" />
+    <text x="0" y="110" font-family="'Inter', sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#E5C77A" text-anchor="middle">
+      DEHYDRATED ONION POWDER
+    </text>
+  </g>
+
+  <!-- BOWL 2: Dehydrated Tomato Powder (Center High-Profile) -->
+  <g transform="translate(800, 620)" filter="url(#bowlShadow)">
+    <ellipse cx="0" cy="50" rx="200" ry="95" fill="#0E1611" opacity="0.65" />
+    <!-- Ceramic Bowl Rim -->
+    <ellipse cx="0" cy="0" rx="190" ry="92" fill="#28352C" stroke="url(#goldTrim)" stroke-width="4" />
+    <ellipse cx="0" cy="6" rx="175" ry="80" fill="#16221A" />
+    <!-- Rich Tomato Mound -->
+    <path d="M-165 5 Q-80 -105 0 -115 Q80 -105 165 5 Q80 70 0 75 Q-80 70 -165 5 Z" fill="url(#tomatoPowderGrad)" />
+    <ellipse cx="-20" cy="-35" rx="100" ry="50" fill="#FF8C75" opacity="0.45" />
+    <ellipse cx="35" cy="-20" rx="75" ry="35" fill="#FFA590" opacity="0.3" />
+    <!-- Decorative bay leaves / botanical branch -->
+    <path d="M120 -50 C145 -90 190 -95 210 -85 C195 -60 160 -50 120 -50 Z" fill="#2E7D4E" stroke="#1B5138" stroke-width="1.5" />
+    <path d="M140 -70 C160 -110 205 -115 225 -100 C205 -80 175 -70 140 -70 Z" fill="#3B9E63" />
+    <text x="0" y="125" font-family="'Inter', sans-serif" font-size="18" font-weight="700" letter-spacing="3.5" fill="#FF8C75" text-anchor="middle">
+      DEHYDRATED TOMATO POWDER
+    </text>
+  </g>
+
+  <!-- BOWL 3: Dehydrated Ginger Powder (Right Middle) -->
+  <g transform="translate(1280, 680)" filter="url(#bowlShadow)">
+    <ellipse cx="0" cy="40" rx="170" ry="85" fill="#0E1611" opacity="0.6" />
+    <ellipse cx="0" cy="0" rx="160" ry="80" fill="#2D3B31" stroke="url(#goldTrim)" stroke-width="3.5" />
+    <ellipse cx="0" cy="5" rx="146" ry="70" fill="#1C2720" />
+    <path d="M-135 5 Q-60 -75 0 -80 Q60 -75 135 5 Q60 55 0 60 Q-60 55 -135 5 Z" fill="url(#gingerPowderGrad)" />
+    <ellipse cx="-20" cy="-25" rx="85" ry="40" fill="#FDE49E" opacity="0.5" />
+    <!-- Ginger root silhouette -->
+    <path d="M100 20 Q160 5 190 -25 Q210 5 180 35 Q140 40 100 20 Z" fill="#9C7738" stroke="#755620" stroke-width="2" opacity="0.85" />
+    <text x="0" y="110" font-family="'Inter', sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#E5C77A" text-anchor="middle">
+      DEHYDRATED GINGER POWDER
+    </text>
+  </g>
+
+  <!-- BOWL 4 / BOARD: Dehydrated Onion Flakes (Foreground Center-Bottom) -->
+  <g transform="translate(800, 840)" filter="url(#bowlShadow)">
+    <ellipse cx="0" cy="30" rx="240" ry="90" fill="#0A0E0B" opacity="0.75" />
+    <!-- Shallow artisan platter -->
+    <ellipse cx="0" cy="0" rx="230" ry="82" fill="#232E26" stroke="url(#goldTrim)" stroke-width="3" />
+    <ellipse cx="0" cy="4" rx="215" ry="72" fill="#161E18" />
+    <!-- Flakes Bed -->
+    <ellipse cx="0" cy="-5" rx="200" ry="65" fill="#D3BE93" />
+    <!-- Scatter of individual crisp kibbled flakes -->
+    <g fill="url(#onionFlakeGrad)" stroke="#B39763" stroke-width="0.8">
+      <polygon points="-120,-20 -95,-35 -75,-15 -105,-5" />
+      <polygon points="-80,-40 -50,-50 -35,-30 -65,-25" />
+      <polygon points="-30,-45 10,-55 25,-35 -15,-20" />
+      <polygon points="35,-45 75,-50 90,-30 50,-20" />
+      <polygon points="95,-35 135,-40 145,-15 110,-10" />
+      <polygon points="-140,5 -110,-5 -95,20 -125,25" />
+      <polygon points="-85,10 -55,-5 -35,15 -70,30" />
+      <polygon points="-25,10 15,5 30,25 -10,35" />
+      <polygon points="40,5 80,-5 95,20 55,30" />
+      <polygon points="105,10 145,0 155,25 120,30" />
+      <polygon points="-50,30 -20,25 -5,45 -35,50" />
+      <polygon points="10,30 45,25 60,45 25,50" />
+      <polygon points="-100,25 -70,20 -60,40 -90,42" />
+      <polygon points="70,25 100,20 115,40 85,45" />
+    </g>
+    <text x="0" y="70" font-family="'Inter', sans-serif" font-size="15" font-weight="600" letter-spacing="3" fill="#F4EEDC" text-anchor="middle">
+      DEHYDRATED ONION FLAKES (KIBBLED)
+    </text>
+  </g>
+
+  <!-- Editorial Crest & Quality Seal in Top-Right -->
+  <g transform="translate(1380, 120)">
+    <circle cx="0" cy="0" r="55" fill="#123D2A" stroke="url(#goldTrim)" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#C6A15B" stroke-width="1" stroke-dasharray="3 3" />
+    <text x="0" y="-12" font-family="'Inter', sans-serif" font-size="10" font-weight="700" letter-spacing="2.5" fill="#C6A15B" text-anchor="middle">
+      PREMIUM
+    </text>
+    <text x="0" y="8" font-family="'Playfair Display', Georgia, serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      EXPORT
+    </text>
+    <text x="0" y="24" font-family="'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="2" fill="#E5C77A" text-anchor="middle">
+      STANDARD
+    </text>
+  </g>
+</svg>

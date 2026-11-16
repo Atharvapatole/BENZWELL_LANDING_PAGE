@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 32, 40, 32;
+  --background-rgb: 248, 247, 242;
+}
+
+body {
+  color: #202820;
+  background-color: #F8F7F2;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #C6A15B;
+  color: #FFFFFF;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C6A15B40;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A15B80;
+}
+
+/* Editorial grain/texture overlay subtle effect */
+.bg-subtle-pattern {
+  background-image: radial-gradient(rgba(18, 61, 42, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Card hover and smooth transition helpers */
+.editorial-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.editorial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -10px rgba(18, 61, 42, 0.08);
+}
